@@ -1,0 +1,38 @@
+# Gradle and Kotlin caches
+.gradle/
+.kotlin/
+
+# Build outputs
+build/
+.externalNativeBuild/
+.cxx/
+/captures/
+/release/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Local Android SDK and signing configuration
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# JVM crash reports and heap dumps
+*.hprof
+hs_err_pid*.log
+replay_pid*.log
+
+# OS and editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
