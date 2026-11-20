@@ -1,13 +1,30 @@
-Путь к Android 
-```
-ls -d /opt/android-sdk ~/Android/Sdk ~/.android/sdk 2>/dev/null
+# QuickNotes
+
+Небольшое Android-приложение для быстрых заметок голосом и текстом.
+Написано на Kotlin с Jetpack Compose и Material 3.
+
+## Возможности
+
+- Голосовой ввод на русском языке и добавление текста через кнопку «+».
+- До пяти категорий со значками и перенос заметок перетаскиванием.
+- Редактирование заметок, отметка выполнения и удаление с возможностью отмены.
+- Выполненные заметки в конце списка; данные хранятся на устройстве.
+
+## Установка
+
+Скачайте APK из [Releases](https://github.com/klishin16/quick-voice-notes/releases)
+и установите на устройство с **Android 8.0 или новее**.
+Для голосового ввода на устройстве должно быть доступно приложение распознавания речи.
+
+## Сборка
+
+Откройте проект в Android Studio или укажите путь к Android SDK через `ANDROID_HOME`
+и выполните из корня проекта:
+
+```bash
+./gradlew assembleRelease
 ```
 
-```
-set -Ux ANDROID_HOME /opt/android-sdk
-fish_add_path $ANDROID_HOME/platform-tools $ANDROID_HOME/cmdline-tools/latest/bin
-```
+APK появится в `build/outputs/apk/release/QuickNotes-release.apk`.
 
-```
-JAVA_HOME=/usr/lib/jvm/java-17-openjdk gradle assembleRelease
-```
+[Дизайн и поведение интерфейса](DESIGN.md) · [Настройка окружения](DEVELOPMENT.md)
