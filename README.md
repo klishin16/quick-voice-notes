@@ -15,16 +15,3 @@
 Скачайте APK из [Releases](https://github.com/klishin16/quick-voice-notes/releases)
 и установите на устройство с **Android 8.0 или новее**.
 Для голосового ввода на устройстве должно быть доступно приложение распознавания речи.
-
-## Сборка
-
-Откройте проект в Android Studio или укажите путь к Android SDK через `ANDROID_HOME`
-и выполните из корня проекта:
-
-```bash
-./gradlew assembleRelease
-```
-
-APK появится в `build/outputs/apk/release/QuickNotes-release.apk`.
-
-[Дизайн и поведение интерфейса](DESIGN.md) · [Настройка окружения](DEVELOPMENT.md)
